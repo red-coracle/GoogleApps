@@ -289,6 +289,9 @@ public class GoogleNewsActivity extends Activity implements
 			Intent i = new Intent(this, Preferences.class);
 			startActivity(i);
 			return true;
+        case R.id.menu_exit:
+            finish();
+            return true;
 		}
 		return false;
 	}
